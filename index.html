@@ -16,6 +16,15 @@
   </head>
   <body>
 
+    <!-- loader -->
+        <div id="loader">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    <!-- loader --> 
+
     <!-- sidebar -->
 
     <div id="sidebar">
@@ -91,8 +100,8 @@
                             <h5 class="text-3 text-uppercase text-center">software developer</h5>
                             <div class="my-5 text-center social-bar">
                                 <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-skype"></i></a>
-                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/willian-rodriguez-159b85113" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.facebook.com/willian.rodriguez.92" target="_blank"><i class="fab fa-facebook"></i></a>
                             </div>
                             <p class="text-center">
                                 <button class="btn btn-primary Portfolio-btn">
@@ -506,13 +515,13 @@
                             <p class="text-center text">rodriguezwillian95@gmail.com</p>
                             <ul class="nav justify-content-center">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#"><i class="fab fa-facebook icon"></i></a>
+                                    <a class="nav-link active" href="https://www.facebook.com/willian.rodriguez.92" target="_blank"><i class="fab fa-facebook icon"></i></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#"><i class="fab fa-instagram icon"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fab fa-github icon"></i></a>
+                                    <a class="nav-link" href="https://github.com/willian95" target="_blank"><i class="fab fa-github icon"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -547,10 +556,16 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $("#loader").css('display', 'none')
+        });
+    </script>
     <script src="js/script.js"></script>
     <script>
         new WOW().init();
